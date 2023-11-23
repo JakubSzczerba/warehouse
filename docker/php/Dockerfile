@@ -9,4 +9,8 @@ RUN apt-get update  \
     && curl -sS https://getcomposer.org/installer | php \
     && mv composer.phar /usr/local/bin/composer
 
+RUN echo 'memory_limit = 15G' >> /usr/local/etc/php/conf.d/docker-php-memlimit.ini;
+
+RUN echo 'max_execution_time = 2000' >> /usr/local/etc/php/conf.d/docker-php-execution-time.ini;
+
 WORKDIR /var/www/warehouse

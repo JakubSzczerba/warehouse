@@ -7,4 +7,11 @@
 /public/bundles/
 /var/
 /vendor/
+/src/Data/Input/Inventory.csv
+/src/Data/Input/Products.csv
+/src/Data/Input/Prices.csv
 ###< symfony/framework-bundle ###
+
+###> phpunit/phpunit ###
+.phpunit.result.cache
+###< phpunit/phpunit ###
